@@ -1,0 +1,40 @@
+concept_beaver_genus
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Род бобров]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Castor genus]
+   (* <- lang_en;; *);
+
+<- concept_animal_species;
+
+<- rrel_animal_genus: concept_castoridae_family;
+
+-> rrel_animal_species: concept_beaver;
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Род бобров)]
+		(* <- lang_ru;; *);
+		[Def. ( Castor genus)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Бобры́ (лат. Castor genus от др.-греч. κάστωρ «бобр» ← κάστον «древесина») — род млекопитающих из отряда грызунов. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Beavers (genus Castor genus) are large, semiaquatic rodents of the Northern Hemisphere. ]
+			(* <- lang_en;; *);;
+		*);;
+    
+  *);;

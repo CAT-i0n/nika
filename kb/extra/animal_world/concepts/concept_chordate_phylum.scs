@@ -1,0 +1,41 @@
+concept_chordate_phylum
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Тип хордовые]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Chordate phylum]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [По степени развития нервной системы тип хордовых занимает высшее место среди всех животных. В мире известно более 60 000 видов хордовых. ]
+   (* <- lang_ru;; *);
+
+<- concept_animal_phylum;
+
+<- rrel_animal_phylum: concept_animal_kingdom;
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Царство животных)]
+		(* <- lang_ru;; *);
+		[Def. (Animalia kingdom)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Тип вторичноротых животных, для которых характерно наличие энтодермального осевого скелета в виде хорды, которая у высших форм заменяется позвоночником.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[a type of deuterostome animal characterized by an endodermal axial skeleton in the form of a notochord, which in higher forms is replaced by a vertebral column.]
+			(* <- lang_en;; *);;
+		*);;
+  *);;

@@ -1,0 +1,42 @@
+concept_beaver
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Бобер обыкновенный]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [ Castor]
+   (* <- lang_en;; *);
+
+<- concept_animal_species;
+
+<- rrel_animal_species: concept_castoridae_family;
+
+=> nrel_weight: [11];
+
+=> nrel_height: [40];
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Бобер обыкновенный)]
+		(* <- lang_ru;; *);
+		[Def. ( Castor)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Бобры́ (лат. Castor от др.-греч. κάστωρ «бобр» ← κάστον «древесина») — вид млекопитающих из отряда грызунов. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Beavers (Castor) are large, semiaquatic rodents of the Northern Hemisphere. ]
+			(* <- lang_en;; *);;
+		*);;
+    
+  *);;

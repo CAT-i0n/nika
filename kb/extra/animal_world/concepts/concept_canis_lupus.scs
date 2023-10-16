@@ -1,0 +1,40 @@
+concept_canis_lupus
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Волк серый]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [canis lupus]
+   (* <- lang_en;; *);
+
+<- concept_animal_species;
+
+=> nrel_weight: [50];
+
+=> nrel_height: [100];
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Волк серый)]
+		(* <- lang_ru;; *);
+		[Def. (canis lupus)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Вид хищных млекопитающих из семейства псовых. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[The wolf (Canis lupus; PL: wolves), also known as the gray wolf or grey wolf, is a large canine native to Eurasia and North America. ]
+			(* <- lang_en;; *);;
+		*);;
+    
+  *);;

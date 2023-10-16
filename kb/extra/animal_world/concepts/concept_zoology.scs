@@ -1,0 +1,38 @@
+concept_zoology
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Зоология]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Zoology]
+   (* <- lang_en;; *);
+
+<-concept_science;
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Животный мир)]
+		(* <- lang_ru;; *);
+		[Def. (Animal world)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Зооло́гия — наука о представителях царства животных, в том числе человеке]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Zoology is the science of representatives of the animal kingdom, including humans.]
+			(* <- lang_en;; *);;
+		*);;
+      <= nrel_using_constants: {
+			concept_animal
+   	 };;
+  *);;

@@ -1,0 +1,38 @@
+concept_rodent_order
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Отряд грызунов]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Rodent_order]
+   (* <- lang_en;; *);
+
+<- concept_animal_order;
+
+<- rrel_animal_order: concept_chordate_phylum;
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Отряд грызунов)]
+		(* <- lang_ru;; *);
+		[Def. (Rodent order)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Грызуны́(лат. Rodentia) — самый многочисленный отряд млекопитающих. Отличительным признаком представителей отряда является наличие диастемы и по одной паре крупных резцов в верхней и нижней челюстях. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Rodents (lat. Rodentia) are the most numerous order of mammals. A distinctive feature of the representatives of the order is the presence of a diastema and one pair of large incisors in the upper and lower jaws.]
+			(* <- lang_en;; *);;
+		*);;
+    
+  *);;

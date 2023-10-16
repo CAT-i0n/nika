@@ -1,0 +1,42 @@
+concept_felis_catus
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Кошка домашняя]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Felis catus]
+   (* <- lang_en;; *);
+
+<- concept_animal_species;
+
+<- rrel_animal_species: concept_felis;
+
+=> nrel_weight: [4];
+
+=> nrel_height: [24];
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Кошка домашняя)]
+		(* <- lang_ru;; *);
+		[Def. (Felis catus)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Домашние кошки - это маленькие хищники с мягкой шерстью, остро заточенными когтями и изогнутыми усами. Они являются популярными домашними животными благодаря своему независимому характеру и способности охотиться на грызунов. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[The cat (Felis catus) is a domesticated species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is commonly referred to as the domestic cat or house cat to distinguish it from the wild members of the family.]
+			(* <- lang_en;; *);;
+		*);;
+    
+  *);;

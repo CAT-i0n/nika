@@ -1,0 +1,48 @@
+concept_animal_taxonomy
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Таксономия животных]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Animal taxonomy]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [Другое названия - систематика животных.]
+   (* <- lang_ru;; *);
+
+=> nrel_inclusion:
+	concept_animal_class;
+	concept_animal_phylum;
+	concept_animal_kingdom;
+	concept_animal_order;
+	concept_animal_species;
+	concept_animal_genus;
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Таксономия животных)]
+		(* <- lang_ru;; *);
+		[Def. (Animal taxonomy)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Раздел зоологии, занимающийся присвоением животным научных названий, описанием их видов и распределением (классификацией)последних по естественным группам на основании родственных (эволюционных) связей.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[A branch of zoology that deals with assigning scientific names to animals, describing their species and distributing (classifying) the latter into natural groups based on family (evolutionary) connections.]
+			(* <- lang_en;; *);;
+		*);;
+      <= nrel_using_constants: {
+			concept_animal
+   	 };;
+  *);;

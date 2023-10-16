@@ -1,0 +1,38 @@
+concept_felis
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [Кошки]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Felis]
+   (* <- lang_en;; *);
+
+<- concept_animal_species;
+
+<- rrel_animal_genus: concept_canidae_family;
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	    [Опр. (Кошки)]
+		(* <- lang_ru;; *);
+		[Def. (Felis)]
+		(* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Кошки - род хищных млекопитающих из семейства кошачьих.  ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Felis is a genus of small and medium-sized cat species native to most of Africa and south of 60° latitude in Europe and Asia to Indochina. ]
+			(* <- lang_en;; *);;
+		*);;
+    
+  *);;
