@@ -1,0 +1,27 @@
+concept_message_about_classifying_system
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	  [сообщение о классифицирующей системе]
+	  (* <- lang_ru;; *);
+=> nrel_wit_ai_idtf:
+	  [about_classifying_system];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+	   [Опр. (сообщение о классифицирующей системе)]
+	   (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+	   [сообщение о классифицирующей системе - атомарное сообщение,
+    которое содержит сушность, для которой нужно найти классифицирующую ее систему.]
+		   (* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message
+		};;
+	*);;

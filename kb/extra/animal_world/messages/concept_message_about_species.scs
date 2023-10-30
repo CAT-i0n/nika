@@ -1,0 +1,27 @@
+concept_message_about_species
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	  [сообщение о видах животных]
+	  (* <- lang_ru;; *);
+=> nrel_wit_ai_idtf:
+	  [about_species];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+	   [Опр. (сообщение о видах животных)]
+	   (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+	   [сообщение о видах животных - атомарное сообщение,
+    цель которого запросить вид животного.]
+		   (* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message
+		};;
+	*);;

@@ -1,4 +1,5 @@
 concept_chordate_phylum
+<- concept_wit_entity;
 <- sc_node_class;
 <- class;
 => nrel_main_idtf:

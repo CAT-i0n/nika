@@ -1,6 +1,5 @@
 concept_animal_taxonomy
-<- sc_node_class;
-<- class;
+<- concept_wit_entity;
 => nrel_main_idtf:
    [Таксономия животных]
    (* <- lang_ru;; *);
@@ -9,7 +8,7 @@ concept_animal_taxonomy
    (* <- lang_en;; *);
 
 => nrel_note:
-   [Другое названия - систематика животных.]
+   [Другое название - систематика животных]
    (* <- lang_ru;; *);
 
 => nrel_inclusion:
@@ -19,6 +18,8 @@ concept_animal_taxonomy
 	concept_animal_order;
 	concept_animal_species;
 	concept_animal_genus;
+
+<= nrel_classify: concept_animal;
 
 <- rrel_key_sc_element:
    ...
@@ -46,3 +47,7 @@ concept_animal_taxonomy
 			concept_animal
    	 };;
   *);;
+
+
+
+nrel_classify <- sc_node_norole_relation;;

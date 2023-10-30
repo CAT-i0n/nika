@@ -1,6 +1,5 @@
 concept_animal_world
-<- sc_node_class;
-<- class;
+<- concept_wit_entity;
 => nrel_main_idtf:
    [Животный мир]
    (* <- lang_ru;; *);

@@ -1,0 +1,27 @@
+concept_message_about_studying_science
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	  [сообщение о изучающей науке]
+	  (* <- lang_ru;; *);
+=> nrel_wit_ai_idtf:
+	  [about_studying_science];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+	   [Опр. (сообщение о изучающей науке)]
+	   (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+	   [сообщение о изучающей науке - атомарное сообщение,
+    которое содержит сушность, для которой нужно найти изучающую ее науку.]
+		   (* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message
+		};;
+	*);;
