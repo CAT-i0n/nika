@@ -1,0 +1,66 @@
+version: "2.0"
+
+nlu:
+- intent: greeting
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - good by
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: about_entity
+  examples: |
+    - What is Nika?
+    - What is AI?
+    - What is animal?
+    - What is sc-code?
+
+- intent: about_color
+  examples: |
+    - Change color
+    - Change color of header
+    - Change color to new
+    - Change color of background
+
+- intent: about_skill
+  examples: |
+    - What can you do?
+    - What can Nika do?
+    - What can do?
+
